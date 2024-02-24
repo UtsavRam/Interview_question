@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-x
+        {
+            display: flex;
+            justify-content:space-around;
+            align-items:space-around;
+            /* flex-direction:column; */
+            flex-wrap: wrap;
+            flex-wrap:wrap-reverse;
+        }
+        .x
+        {
+            height: 300px;
+            width: 250px;
+            border: 3px solid black;
+            /* flex-grow:calc(1); */
+            /* flex-grow:inherit; */
+            /* flex-grow:initial; */
+            /* flex-grow:unset; */
+            /* flex-grow:var(300px); */
+        }
+        .outer
+        {
+            border: 1px solid black;
+           display: table-cell;
+           width: 500px;
+           height: 500px;
+           vertical-align: middle;
+           text-align: center;
+        }
+        .iner
+        {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main-x">
+    <div class="x"></div>
+    <div class="x"></div>
+    <div class="x"></div>
+    <!-- <div class="x"></div>
+    <div class="x"></div> -->
+   </div>
+   
+   <div class="outer">
+       <div class="iner">
+            your content
+       </div>
+   </div>
+</body>
+</html>
